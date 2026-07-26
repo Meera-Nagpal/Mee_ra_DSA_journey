@@ -54,16 +54,16 @@ void level(Node* root){
     }
     
 }
-// void inorder(Node* root){
-//     //base case
-//     if(root==NULL){
-//         return;
-//     }
+void inorder(Node* root){
+    //base case
+    if(root==NULL){
+        return;
+    }
     
-//     inorder(root->left);
-//     cout<<root->data<<" ";//recursion ye bolta h ki after return from base case hum recursive call wali statements ko execute krte h aur yahi vo node h .
-//     inorder(root->right);
-// }
+    inorder(root->left);
+    cout<<root->data<<" ";//recursion ye bolta h ki after return from base case hum recursive call wali statements ko execute krte h aur yahi vo node h .
+    inorder(root->right);
+}
 void preorder(Node* root){
     //base case
     if(root!=NULL){
